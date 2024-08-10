@@ -10,6 +10,7 @@ import StopWatch from "./coding-questions/stopwatch/StopWatch";
 import Posts from "./coding-questions/pagination/Posts";
 import Counter from "./coding-questions/hoc/Counter";
 import Hover from "./coding-questions/hoc/Hover";
+import StopWatch2 from "./coding-questions/stopwatch/StopWatch2";
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
       <UseRefContainer />
       {/* Coding questions */}
       <StopWatch />
+      <StopWatch2 />
       <Posts />
+      {/* HOC */}
       <Counter />
       <Hover />
     </div>

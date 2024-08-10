@@ -7,7 +7,10 @@ export default function StopWatch() {
   const handleStart = () => {
     /* If timerRef id is not null that means we already have setInterval running background if 
     the user clicks on multiple times on start button we need clear already running intervaltimer */
-    if (timerRef.current.id !== null) clearInterval(timerRef.current.id);
+    if (timerRef.current.id !== null) {
+      clearInterval(timerRef.current.id);
+      timerRef.current.id = null;
+    }
 
     const intervalId = setInterval(() => {
       setTimer((prev) => prev + 1);
